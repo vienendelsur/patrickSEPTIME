@@ -1,0 +1,181 @@
+/* styles flex pouir septime */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ici mettre reset normalize.css */
+
+
+/* couleurs pour identifier */
+
+.bleu {
+    background-color: lightblue;
+}
+
+.vert {
+    background: lightgreen;
+}
+
+.gris {
+    background-color: lightgrey;
+}
+
+/* la grille en flex */
+/* la classe pour créer une rangée */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* passage à la ligne des éléments pour que la largeur des col soit respectée */
+    flex-wrap: wrap;
+    /* row-gap:5px; */
+    /* margin-bottom: 5px; */
+}
+
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+    padding: 5px;
+}
+
+.col-2 {
+    width: 16.666666%;
+    padding: 5px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 5px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    padding: 5px;
+}
+
+.col-6 {
+    width: 50%;
+    /* padding: 5px; */
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 5px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 5px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+
+.col-10 {
+    width: 83.333333%;
+    padding: 5px;
+}
+
+.col-11 {
+    width: 91.666666%;
+    padding: 5px;
+}
+
+.col-12 {
+    width: 100%;
+    /* padding: 5px;     */
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+
+/* La mise en page */
+
+body {
+    background-color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* conteneur principal  */
+#conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+}
+
+/* les zone carrés  */
+
+.carre {
+    width: 500px;
+    height: 500px;
+}
+
+/* en-tête */
+header {
+    padding-top: 50px;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+}
+
+/* navigation haute */
+
+nav ul {
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+
+/* illustration en bg css */
+
+.assiette {
+    background: url("../img/assiette.jpg") transparent no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
